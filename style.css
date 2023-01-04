@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+html{
+    font-family: 'Poppins',sans-serif ;
+}
+
+/* top-nav */
+header
+{   margin:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* Logo div */
+picture{
+    width:40%;
+}
+
+picture img{
+width:200px;
+}
+
+/* nav links */
+header .links{
+    width:60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .links a{
+    text-decoration: none;
+    color:black;
+    margin-left: 10px;
+}
+/* form */
+
+
+/* Register and Login Buttons */
+.Register{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    width:120px;
+    height:40px;
+    background-color: #C62728;
+    color:white;
+    border-radius: 5px;
+}
+.Login{
+    width:120px;
+    height:40px;
+    color: #000000;
+    border-color: #C62728;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* steps div */
+.steps{
+    display: flex;
+    justify-content: space-between;
+    margin:2em;
+}
+/* universal steps property */
+.step_1,.step_2,.step_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+/* steps 1 of 3 */
+.ld{
+    background-color: white;
+    width:60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 150px;
+}
+.ld_base{
+    display: table;
+    width:150px;
+    height:40px;
+    background-color: #C62728;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.ld_base h4{
+    display: table-cell;
+    vertical-align:middle;
+    font-weight: 400;
+}
+
+/* steps 2 of 3 */
+
+.Wtw{
+    background-color:#40423D ;
+    color:white;
+    width:60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 150px;
+}
+.Wtw_base{
+    display: table;
+    width:auto;
+    padding:10px;
+    height:40px;
+    background-color: #40423D;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.Wtw_base h4{
+    display: table-cell;
+    vertical-align:middle;
+    font-weight: 400;
+}
+
+/* steps 3 of 3 */
+
+.spcl{
+    background-color:#40423D ;
+    color:white;
+    width:60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 150px;
+}
+.spcl_base{
+    display: table;
+    width:auto;
+    padding:10px;
+    height:40px;
+    background-color: #40423D;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.spcl_base h4{
+    display: table-cell;
+    vertical-align:middle;
+    font-weight: 400;
+}
+
+/* universal body property */
+
+.body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+/* Background Truck Image */
+.body img {
+    margin:0;
+    max-width:100%;
+    height:auto;
+
+}
+
+/* Body form structure */
+.body .form
+{   
+    
+    position: absolute;
+    color: white;
+    border: #C62728;
+    margin:2em;
+    
+}
+/* Heading */
+.heading h3{
+    margin-bottom:7px;
+}
+/* .heading h4{
+    font-weight: 400;
+} */
+
+/* Placeholder space */
+select,input{
+    text-indent: 10px;
+    cursor: pointer;
+}
+button{
+    cursor:pointer;
+}
+/* section */
+section{
+    border:2px solid #C62728;
+    padding:2em;
+    border-radius: 20px;
+}
+/* Field Section */
+
+.fields{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap:5em;
+    border: 1px solid #F6F6F6;
+    padding: 1em;
+    border-radius: 10px;
+}
+.fields select {
+    margin-top:10px;
+    width:270px;
+    height: 36px;
+    border: 1px solid #F6F6F6;
+    background:transparent ;
+    border-radius: 5px ;
+    color: #F6F6F6;
+}
+
+/* Custom Category Section */
+.choose_cat{
+    margin-top:20px;
+}
+.cus_cat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:1000px;
+    border:1px solid #CED4DA;
+    padding:1em;
+    border-radius: 10px;
+}
+
+.cus_cat button:hover{
+    background-color:#40423D;
+}
+
+.cus_cat button{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    border: none;
+    background-color: #797979;
+    color:#F6F6F6;
+    margin:10px 10px 10px 10px;
+    padding:10px;
+    width:120px;
+    border-radius: 10px;
+}
+
+.cus_cat button img{
+    width:80px;
+    height:auto;
+}
+
+/* Cargo Description */
+.desc h4{
+    margin-bottom:10px;
+}
+.description{
+    margin:10px 0 0 0;
+    border: none;
+    background-color:transparent;
+    border: 1px solid #CED4DA;
+    color:#CED4DA;
+    width:100%;
+    height: 80px;
+    border-radius: 5px;
+}
+
+
+.base{
+    margin:40px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.base > button{
+    background-color: #C62728;
+    color: #F6F6F6;
+    width:75px;
+    height:40px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #101010;
+    color:#868C98
+}
+.f_s1{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+.f_s1 > img{
+    margin:20px 20px 0 0;
+    /* width:30%; */
+}
+.f_s1 > a{
+    text-decoration: none;
+    color: #868C98;
+}
+.f_s1 .socialmedia{
+    display: flex;
+    margin-top: 1em;
+    
+}
+.f_s1 .socialmedia i{
+    width:40px;
+    transition: 0.3s ease-in-out;
+}
+.f_s1 .socialmedia i:hover{
+    color:#C62728;
+    cursor:pointer;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* column-gap: 2em; */
+    margin:50px 0 0 0;
+}
+.company h3{
+    color: #F6F6F6;
+}
+.company a{
+    text-decoration: none;
+    color:#CED4DA;
+    margin-top: 20px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* column-gap: 2em; */
+    margin:50px 0 0 0;
+}
+.services h3{
+    color: #F6F6F6;
+}
+.services a{
+    text-decoration: none;
+    color:#CED4DA;
+    margin-top: 20px;
+}
+.newsletter{
+    margin:60px 0 0 0;
+}
+.newsletter h3{
+    color: #F6F6F6;
+}
+.newsletter p{
+    margin-top:20px;
+}
+
+.newsletter input{
+    width:253px;
+    height: 36px;
+    border:1px solid #797979;
+    border-radius: 5px  0 0 5px ;
+    background-color:#F6F6F6;
+}
+
+.newsletter button{
+    border:1px solid #797979;
+    background-color: transparent;
+    color:#868C98;
+    width:100px;
+    height:36px;
+    border-radius:0 5px 5px 0;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+.newsletter button:hover{
+    color:#F6F6F6;
+    background-color: #C62728;
+    cursor:pointer;
+}

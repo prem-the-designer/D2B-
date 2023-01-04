@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your Loads</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD-tyOHXFD_xdNIeaKiw6p-_zaXnoKUHww",
+      authDomain: "d2b-website-a8b7f.firebaseapp.com",
+      projectId: "d2b-website-a8b7f",
+      storageBucket: "d2b-website-a8b7f.appspot.com",
+      messagingSenderId: "485533402301",
+      appId: "1:485533402301:web:9c72bf34b14fa8472463d4",
+      measurementId: "G-YMC6GY9RDY"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+<body>
+    <header class="nav">
+        <picture class="logo">
+            <img src="./assets/Logo.png" alt="D2B Cargo Logo">
+        </picture>
+        <div class="links">
+            <a href="#">Search Loads</a>
+            <a href="#">Find Trucks</a>
+            <a href="#">Book your Loads</a>
+            <a href="#">Blog</a>
+            <a href="#">Help</a>
+            <button class="Register">REGISTER <i class="fa-solid fa-caret-down"></i></button>
+            <button class="Login">LOGIN</button>
+        </div>
+    </header>
+    <div class="body">
+        <img src="./assets/Lorrybg.jpg" alt="">
+        <div class="form">
+            <div class="steps">
+                <div class="step_1">
+                    <div class="ld">
+                        <img src="./assets/Loaddetails.png" alt="">
+                    </div> 
+                    <h4>Step-1</h4>
+                    <div class="ld_base">
+                        <h4>Load Details</h4>
+                    </div>
+                </div>
+                <div class="step_2">
+                    <div class="Wtw">
+                        <img src="./assets/WtW.png" alt="">
+                    </div> 
+                    <h4>Step-2</h4>
+                    <div class="Wtw_base">
+                        <h4>Where to Where?</h4>
+                    </div>
+                </div>
+                <div class="step_3">
+                    <div class="spcl">
+                        <img src="./assets/Special.png" alt="">
+                    </div> 
+                    <h4>Step-3</h4>
+                    <div class="spcl_base">
+                        <h4>Special Requirements</h4>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="heading">
+                <h3>Add Your Load Details</h3>&nbsp;
+                    <h4>Please specify your shipping goods</h4><br>
+                </div>
+
+                <div class="fields">
+                   <div class="type"> <label for="truck">Truck Type</label><br>
+                    <select name="truck" id="Trucktype"><i class="fa-solid fa-angle-down" ></i>
+                        <option value="">Select your truck</option>
+                    </select>
+                </div>
+                <div class="size">
+                    <label for="size">Truck Size</label><br>
+                    <select name="size" id="Trucksize"><i class="fa-solid fa-angle-down" ></i>
+                        <option value="">Select</option>
+                    </select>
+                </div>
+                <div class="capacity">
+                    <label for="truck">Max. Capacity[in Ton]</label><br>
+                    <select name="truck" id="Trucktype"><i class="fa-solid fa-angle-down" ></i>
+                        <option value="">Select</option>
+                    </select>
+                </div>
+            </div><br>
+            <h4 class="choose_cat">Choose your shipping goods category from below:</h4><br>
+            <div class="category">
+                <div class="cus_cat">
+                    <button class="refrigerator">
+                        <img src="./assets/Refrigerator.png" alt="Refrigerator">
+                        <h5>Refrigerated</h5>
+                    </button>
+                    <button class="boats">
+                        <img src="./assets/Boats.png" alt="boats">
+                        <h5>Boats</h5>
+                    </button>
+                    <button class="full_loads">
+                        <img src="./assets/Full Loads.png" alt="full_loads">
+                        <h5>Full Loads</h5>
+                    </button>
+                    <button class="containers">
+                        <img src="./assets/Containers.png" alt="containers">
+                        <h5>Containers</h5>
+                    </button>
+                    <button class="Machinery">
+                        <img src="./assets/Machinery.png" alt="Machinery">
+                        <h5>Machinery</h5>
+                    </button>
+                    <button class="Pets">
+                        <img src="./assets/Pets.png" alt="Pets">
+                        <h5>Pets</h5>
+                    </button>
+                    <button class="Motorcycles">
+                        <img src="./assets/Motorcycles.png" alt="Motorcycles">
+                        <h5>Motorcycles</h5>
+                    </button>
+                    <button class="Engines">
+                        <img src="./assets/Enginers.png" alt="Engines">
+                        <h5>Engines</h5>
+                    </button>
+                    <button class="Moving">
+                        <img src="./assets/Moving.png" alt="Moving">
+                        <h5>Moving</h5>
+                    </button>
+                    <button class="Furniture">
+                        <img src="./assets/Furniture.png" alt="Furniture">
+                        <h5>Furniture</h5>
+                    </button>
+                    <button class="Appliances">
+                        <img src="./assets/Appliances.png" alt="Appliances">
+                        <h5>Refrigerated</h5>
+                    </button>
+                    <button class="Fragile">
+                        <img src="./assets/Fragile.png" alt="Fragile">
+                        <h5>Fragile Objects</h5>
+                    </button>
+                    <button class="Pallets">
+                        <img src="./assets/Pallets.png" alt="Pallets">
+                        <h5>Pallets</h5>
+                    </button>
+                    <button class="Vehicles">
+                        <img src="./assets/Vehicles.png" alt="Vehicles">
+                        <h5>Vehicles</h5>
+                    </button>
+                    <button class="Other">
+                        <img src="./assets/Other.png" alt="Other Packages">
+                        <h5>Other Packages</h5>
+                    </button>
+                    <button class="Property">
+                        <img src="./assets/Other.png" alt="Property">
+                        <h5>House/Property Moving</h5>
+                    </button>
+                    <button class="Part_load">
+                        <img src="./assets/PartLoad.png" alt="Part Load">
+                        <h5>Part Load</h5>
+                    </button>
+                    <button class="Point_load">
+                        <img src="./assets/Pointload.png" alt="Point Load">
+                        <h5>Point Load</h5>
+                    </button>
+
+                </div>
+            </div><br>
+            <div class="desc">
+                <h4>Cargo description &nbsp;<span style="color: red;">*</span></h4>
+                <div class="message">
+                    <input type="text" class="description" placeholder="Enter any message">
+                </div>
+            </div>
+            <div class="base">
+            <h4 class="ind_steps">Step 1 of 3</h4>
+            <button class="next">Next</button>
+        </div>
+            </section>
+        </div>
+    
+    </div>
+    <footer>
+        <div class="f_s1">
+            <img src="./assets/logo-white.png" alt="Logo">
+            <span>11B/1, New Street, Parvathipuram,<br> Nagercoil 629003</span>
+            <a href="support@d2bcargo.com">support@d2bcargo.com</a>
+            <span>+91 7397634793</span>
+            <div class="socialmedia">
+                <i class="fa-brands fa-square-facebook fa-lg"></i>
+                <i class="fa-brands fa-square-twitter fa-lg"></i>
+                <i class="fa-brands fa-linkedin fa-lg"></i>
+                <i class="fa-brands fa-instagram fa-lg"></i>
+                <i class="fa-brands fa-pinterest fa-lg"></i>
+                <i class="fa-brands fa-youtube fa-lg"></i>
+            </div>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="services">
+            <h3>Services</h3>
+            <a href="#">Search Loads</a>
+            <a href="#">Book your Loads</a>
+            <a href="#">Blog</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="newsletter">
+            <h3>Join our Newsletter</h3>
+            <p>Subscribe today for free and be the first to get<br> notified on new updates.</p>
+            <input type="text" placeholder="Email Address"><button>SUBSCRIBE</button>
+        </div>
+    </footer>
+</body>
+</html>
